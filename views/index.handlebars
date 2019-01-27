@@ -1,0 +1,46 @@
+{{!-- setup this file to have the template that handlebars can render onto --}}
+<img src="/assets/img/burger.jpg">
+<h1 class="center">Eat-Da-Burger</h1>
+
+<div class="row">
+    <div class="column" style="width:40%">
+        <ol>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li style="float:right">{{burger_name}}</li>
+            {{/unless}}
+            {{/each}}
+        </ol>
+    </div>
+
+    <div class="column" style="width:10%">
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+
+            <dl>
+                <button id="{{id}}" class="devourIt-btn">Devour it!</button>
+            </dl>
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="column" style="width:50%">
+        <ol class="devoured">
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>{{burger_name}}</li>
+            {{/if}}
+            {{/each}}
+        </ol>
+    </div>
+</div>
+<br><br>
+{{!-- create a button that will submit the user input into the db --}}
+<form class="create-form center">
+    <textarea name="message" rows="7" cols="50" id="burger"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+    <p>Enter a burger you want to eat. Click the "Submit" button</p>
+</form>
