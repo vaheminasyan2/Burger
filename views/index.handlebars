@@ -3,7 +3,7 @@
 <h1 class="center">Eat-Da-Burger</h1>
 
 <div class="row">
-    <div class="column" style="width:40%">
+    <div class="column" style="width:45%">
         <ol>
             {{#each burgers}}
             {{#unless devoured}}
@@ -17,16 +17,15 @@
         <ul>
             {{#each burgers}}
             {{#unless devoured}}
-
             <dl>
-                <button id="{{id}}" class="devourIt-btn">Devour it!</button>
+                <button data-id="{{id}}" class="devour">Devour it!</button>
             </dl>
             {{/unless}}
             {{/each}}
         </ul>
     </div>
 
-    <div class="column" style="width:50%">
+    <div class="column" style="width:45%">
         <ol class="devoured">
             {{#each burgers}}
             {{#if devoured}}
@@ -41,6 +40,6 @@
 <form class="create-form center">
     <textarea name="message" rows="7" cols="50" id="burger"></textarea>
     <br>
-    <button type="submit">Submit</button>
+    <button type="submit" id="submit">Submit</button>
     <p>Enter a burger you want to eat. Click the "Submit" button</p>
 </form>

@@ -10,3 +10,5 @@ CREATE TABLE burgers (
     devoured boolean,
     primary key (id)
 );
+
+-- SELECT * FROM burgers_db.burgers;
