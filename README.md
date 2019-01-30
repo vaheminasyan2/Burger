@@ -20,7 +20,7 @@ The app is deployed to Heroku. [Try it out here](https://guarded-coast-90449.her
 1. After cloning this repo run `npm install` to install all dependencies. 
 2. In this repo there is a folder named `db` with `schema.sql` and `seeds.sql` files. Run the `schema.sql` and `seeds.sql` files in the mysql server to create a database, table and populate it with three entries.
 3. Inside a folder named `config` there is a `connection.js` file. Open it and update the connection varialble with your password. 
-4. Inside your terminal or Bash window run `node server js` and navigate to `localhost:3030` to view the app. 
+4. Inside your terminal or Bash window run `node server` and navigate to `localhost:3030` to view the app. 
 
 
 ### Directory structure
