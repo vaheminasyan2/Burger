@@ -26,7 +26,7 @@
     </div>
 
     <div class="column" style="width:45%">
-        <ol class="devoured">
+        <ol class="devoured" style="opacity: 0.5">
             {{#each burgers}}
             {{#if devoured}}
             <li>{{burger_name}}</li>
@@ -39,7 +39,7 @@
 {{!-- create a button that will submit the user input into the db --}}
 <form class="create-form center">
     <textarea name="message" rows="7" cols="50" id="burger"></textarea>
-    <br>
+    <br><br>
     <button type="submit" id="submit">Submit</button>
     <p>Enter a burger you want to eat. Click the "Submit" button</p>
 </form>
