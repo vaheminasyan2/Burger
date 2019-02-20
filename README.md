@@ -8,12 +8,14 @@ The app is deployed to Heroku. [Try it out here](https://guarded-coast-90449.her
 ![homepage](./public/assets/img/homepage.PNG).
 
 ### Technology used:
-* MySQL
-* Node
+* Node.js
 * Express
+* MySQL
+* jQuery
 * Handlebars
 * ORM
 * Heroku
+* JawsDB
 
 ### App Setup
 
